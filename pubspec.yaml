@@ -1,0 +1,49 @@
+name: Digitali360
+description: "A new Flutter project."
+publish_to: "none" # Keep this line to prevent accidental publishing to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.4 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  webview_flutter: ^4.7.0 # Added for WebView support
+  flutter_native_splash: ^2.2.10+1 # Added for creating native splash screens
+  webview_windows: ^0.4.0 # For Windows
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+
+flutter_native_splash:
+  color: "42a5f5"
+  image: assets/logo.png
+  android: true
+  ios: true
+  web: true
+  windows: true
+  macos: true
+  linux: true
+
+  # Example for custom fonts (commented out, include your fonts if needed)
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
